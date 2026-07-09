@@ -1,0 +1,208 @@
+.contact-card {
+  padding: 26px;
+}
+
+.contact-methods {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-method {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  background: var(--color-soft);
+}
+
+.contact-method svg {
+  flex: 0 0 auto;
+  color: var(--color-blue);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.form-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.form-modal.is-open {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.form-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 14, 33, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.form-modal-dialog {
+  position: relative;
+  width: min(100%, 620px);
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: 0 34px 90px rgba(2, 9, 22, 0.32);
+  transform: translateY(18px) scale(0.97);
+  transition: transform 0.28s ease;
+  outline: 0;
+}
+
+.form-modal.is-open .form-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--color-ink);
+  background: var(--color-soft);
+  transition: transform 0.24s ease, background 0.24s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+  transform: translateY(-2px);
+  background: #e7eef8;
+}
+
+.modal-icon {
+  display: grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  margin-bottom: 22px;
+  border-radius: 22px;
+  color: var(--color-white);
+  background:
+    radial-gradient(circle at 28% 20%, rgba(255, 255, 255, 0.58), transparent 28%),
+    linear-gradient(145deg, #63b3ff, var(--color-blue) 52%, #082a5a);
+  box-shadow:
+    0 20px 44px rgba(15, 95, 209, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42);
+}
+
+.modal-icon svg {
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0 6px 9px rgba(0, 0, 0, 0.22));
+}
+
+.form-modal-dialog h2 {
+  max-width: 520px;
+  margin-bottom: 14px;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+}
+
+.form-modal-dialog a {
+  color: var(--color-blue);
+  font-weight: 800;
+}
+
+.modal-note {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  color: #40506a;
+  background: var(--color-soft);
+  line-height: 1.55;
+}
+
+.modal-note svg {
+  flex: 0 0 auto;
+  width: 21px;
+  height: 21px;
+  margin-top: 2px;
+  color: var(--color-blue);
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+@media (max-width: 560px) {
+  .contact-card {
+    padding: 16px;
+  }
+
+  .contact-methods {
+    gap: 9px;
+  }
+
+  .contact-method {
+    padding: 12px;
+    font-size: 0.92rem;
+  }
+
+  .contact-method svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-modal {
+    align-items: end;
+    padding: 14px;
+  }
+
+  .form-modal-dialog {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .modal-close {
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .modal-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+    border-radius: 18px;
+  }
+
+  .modal-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-note {
+    margin-top: 16px;
+    padding: 13px;
+    font-size: 0.9rem;
+  }
+
+  .modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+}

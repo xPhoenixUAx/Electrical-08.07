@@ -1,0 +1,579 @@
+﻿<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon-32x32.png?v=2" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" sizes="180x180">
+  <title>VoltLink Electrical Match | Local Electrical Service Matching</title>
+  <meta name="description" content="A free electrical service aggregator connecting homeowners with independent local providers for repairs, installations, inspections, and urgent requests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body class="site-shell has-floating-cta" data-page="home">
+  <div data-site-header="">
+    <header class="site-header" data-header="">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="VoltLink Electrical Match home">
+    <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></span>
+    <span data-config="brandText">VoltLink</span>
+  </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-menu"><li><a class="is-active" href="index.html">Home</a></li><li class="nav-dropdown">
+          <a class="nav-dropdown-trigger " href="services.html">
+            Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg>
+          </a>
+          <ul class="nav-dropdown-menu" aria-label="Service pages">
+            <li>
+              <a href="services.html">
+                <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-grid" aria-hidden="true" class="lucide lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg></span>
+                <span><strong>All Services</strong><small>Browse categories</small></span>
+              </a>
+            </li>
+            
+      <li>
+        <a href="service-electrical-installation.html">
+          <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plug-zap" aria-hidden="true" class="lucide lucide-plug-zap"><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path><path d="m2 22 3-3"></path><path d="M7.5 13.5 10 11"></path><path d="M10.5 16.5 13 14"></path><path d="m18 3-4 4h6l-4 4"></path></svg></span>
+          <span><strong>Electrical Installation</strong><small>Installation</small></span>
+        </a>
+      </li>
+      <li>
+        <a href="service-panel-upgrades.html">
+          <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="panel-top" aria-hidden="true" class="lucide lucide-panel-top"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path></svg></span>
+          <span><strong>Panel Upgrades</strong><small>Panel work</small></span>
+        </a>
+      </li>
+      <li>
+        <a href="service-emergency-repairs.html">
+          <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="siren" aria-hidden="true" class="lucide lucide-siren"><path d="M7 18v-6a5 5 0 1 1 10 0v6"></path><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"></path><path d="M21 12h1"></path><path d="M18.5 4.5 18 5"></path><path d="M2 12h1"></path><path d="M12 2v1"></path><path d="m4.929 4.929.707.707"></path><path d="M12 12v6"></path></svg></span>
+          <span><strong>Emergency Electrical Repairs</strong><small>Repair</small></span>
+        </a>
+      </li>
+      <li>
+        <a href="service-wiring-rewiring.html">
+          <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cable" aria-hidden="true" class="lucide lucide-cable"><path d="M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z"></path><path d="M17 21v-2"></path><path d="M19 14V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V10"></path><path d="M21 21v-2"></path><path d="M3 5V3"></path><path d="M4 10a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2z"></path><path d="M7 5V3"></path></svg></span>
+          <span><strong>Wiring and Rewiring</strong><small>Wiring</small></span>
+        </a>
+      </li>
+      <li>
+        <a href="service-lighting-installation.html">
+          <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="lightbulb" aria-hidden="true" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></span>
+          <span><strong>Lighting Installation</strong><small>Lighting</small></span>
+        </a>
+      </li>
+      <li>
+        <a href="service-safety-inspections.html">
+          <span class="dropdown-service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" aria-hidden="true" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+          <span><strong>Electrical Safety Inspections</strong><small>Inspection</small></span>
+        </a>
+      </li>
+          </ul>
+        </li><li><a class="" href="about.html">About</a></li><li><a class="" href="contact.html">Contact</a></li></ul>
+        </nav>
+        <div class="header-actions">
+          <a class="header-email" href="mailto:support@voltlinkelectrical.com" data-config="email">support@voltlinkelectrical.com</a>
+          <a class="btn btn-light magnetic" href="contact.html">Get Matched <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <button class="nav-toggle" type="button" data-menu-open="" aria-label="Open menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" aria-hidden="true" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button>
+        </div>
+      </div>
+    </header>
+    <div class="overlay" data-menu-overlay=""></div>
+    <aside class="mobile-panel" data-mobile-panel="" aria-hidden="true">
+      <div class="mobile-panel-head">
+        <a class="brand" href="index.html" aria-label="VoltLink Electrical Match home">
+    <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></span>
+    <span data-config="brandText">VoltLink</span>
+  </a>
+        <button class="mobile-close" type="button" data-menu-close="" aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+      </div>
+      <ul class="mobile-links"><li><a class="is-active" href="index.html">Home</a></li><li class="mobile-dropdown">
+          <button class="mobile-dropdown-toggle " type="button" data-mobile-services-toggle="" aria-expanded="false">
+            <span>Services</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="mobile-dropdown-menu" data-mobile-services-menu="">
+            <a href="services.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-grid" aria-hidden="true" class="lucide lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg> All Services</a>
+            <a href="service-electrical-installation.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plug-zap" aria-hidden="true" class="lucide lucide-plug-zap"><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path><path d="m2 22 3-3"></path><path d="M7.5 13.5 10 11"></path><path d="M10.5 16.5 13 14"></path><path d="m18 3-4 4h6l-4 4"></path></svg> Electrical Installation</a><a href="service-panel-upgrades.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="panel-top" aria-hidden="true" class="lucide lucide-panel-top"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path></svg> Panel Upgrades</a><a href="service-emergency-repairs.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="siren" aria-hidden="true" class="lucide lucide-siren"><path d="M7 18v-6a5 5 0 1 1 10 0v6"></path><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"></path><path d="M21 12h1"></path><path d="M18.5 4.5 18 5"></path><path d="M2 12h1"></path><path d="M12 2v1"></path><path d="m4.929 4.929.707.707"></path><path d="M12 12v6"></path></svg> Emergency Electrical Repairs</a><a href="service-wiring-rewiring.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cable" aria-hidden="true" class="lucide lucide-cable"><path d="M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z"></path><path d="M17 21v-2"></path><path d="M19 14V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V10"></path><path d="M21 21v-2"></path><path d="M3 5V3"></path><path d="M4 10a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2z"></path><path d="M7 5V3"></path></svg> Wiring and Rewiring</a><a href="service-lighting-installation.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="lightbulb" aria-hidden="true" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg> Lighting Installation</a><a href="service-safety-inspections.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" aria-hidden="true" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg> Electrical Safety Inspections</a>
+          </div>
+        </li><li><a class="" href="about.html">About</a></li><li><a class="" href="contact.html">Contact</a></li></ul>
+      <div class="mobile-meta">
+        <a href="mailto:support@voltlinkelectrical.com" data-config="email">support@voltlinkelectrical.com</a>
+        <a href="tel:8884107719" data-config="phone">(888) 410-7719</a>
+        <span data-config="phoneLabel">24/7 Connection Line</span>
+      </div>
+    </aside></div>
+
+  <main>
+    <section class="hero on-dark">
+      <img class="hero-bg" src="img/home/hero-electrical-panel.webp" alt="Electrician working near a residential electrical panel" fetchpriority="high">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow on-dark">Trusted electrical matching network</p>
+          <h1>Find local electrical help without calling around all day.</h1>
+          <p class="lead">VoltLink is a free service that helps homeowners connect with independent local electrical providers for urgent repairs, installations, inspections, and project planning.</p>
+          <div class="hero-actions">
+            <a class="btn magnetic" href="contact.html">Request a Match <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+            <a class="btn btn-light magnetic" href="services.html">View Services</a>
+          </div>
+          <div class="trust-strip reveal">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar">VL</span>
+              <span class="avatar">24</span>
+              <span class="avatar">ID</span>
+              <span class="avatar">OK</span>
+            </div>
+            <span>Thousands of service requests routed across installation, inspection, panel, repair, and wiring categories.</span>
+          </div>
+        </div>
+
+        <aside class="status-card reveal" aria-label="Service matching status">
+          <div class="status-card-head">
+            <h3>Request routed with safety context</h3>
+          </div>
+          <div class="status-card-body">
+            <div class="status-row"><span>Match readiness</span><span>100%</span></div>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+            <div class="status-note">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" aria-hidden="true" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+              <span>Homeowners should verify license and insurance before hiring any independent provider.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="eyebrow">About the network</p>
+          <h2>A safer way to start an electrical service request.</h2>
+          <p>VoltLink does not perform electrical work. We help homeowners describe their electrical need once, then connect with available independent local providers who may be able to inspect, quote, or complete the job.</p>
+          <p>That aggregator role matters when the issue is urgent, the project is unfamiliar, or the homeowner needs a clear first step before choosing a contractor.</p>
+          <div class="home-about-kicker">
+            <div class="kicker-card">
+              <strong>Fast routing</strong>
+              <p>Requests are organized by service type, urgency, location, and homeowner notes.</p>
+            </div>
+            <div class="kicker-card">
+              <strong>Independent providers</strong>
+              <p>Each contractor/provider is separate from this site and must be verified by the homeowner.</p>
+            </div>
+          </div>
+        </div>
+        <div class="media-frame reveal">
+          <img src="img/about/about-aggregator.webp" alt="Homeowner speaking with an electrical service provider" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Full cycle services</p>
+          <h2>From first symptom to the right provider conversation.</h2>
+          <p>Request matching for common residential electrical needs, from small installation tasks to urgent troubleshooting and safety inspections.</p>
+        </div>
+        <div class="home-service-categories" data-service-categories=""><section class="home-service-category reveal">
+        <div class="home-service-category-head">
+          <p class="eyebrow">Priority and prevention</p>
+          <h3>Urgent repair and safety</h3>
+          <p>For symptoms that need fast routing, careful triage, or a qualified provider review before the issue grows.</p>
+        </div>
+        <div class="home-service-category-cards">
+          <article class="card service-card reveal">
+    <img src="img/services/emergency-repairs.webp" alt="Emergency Electrical Repairs service scene" loading="lazy">
+    <div class="service-card-body">
+      <div class="service-card-top">
+        <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="siren" aria-hidden="true" class="lucide lucide-siren"><path d="M7 18v-6a5 5 0 1 1 10 0v6"></path><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"></path><path d="M21 12h1"></path><path d="M18.5 4.5 18 5"></path><path d="M2 12h1"></path><path d="M12 2v1"></path><path d="m4.929 4.929.707.707"></path><path d="M12 12v6"></path></svg></span>
+        <span class="eyebrow">Urgent matching</span>
+      </div>
+      <div>
+        <h3>Emergency Electrical Repairs</h3>
+        <p>Request fast connection with local providers for outages, burning smells, buzzing devices, failed outlets, breaker problems, and urgent safety concerns.</p>
+      </div>
+      <a class="text-link" href="service-emergency-repairs.html">Explore service <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </article><article class="card service-card reveal">
+    <img src="img/services/safety-inspections.webp" alt="Electrical Safety Inspections service scene" loading="lazy">
+    <div class="service-card-body">
+      <div class="service-card-top">
+        <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check" aria-hidden="true" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+        <span class="eyebrow">Checks and prevention</span>
+      </div>
+      <div>
+        <h3>Electrical Safety Inspections</h3>
+        <p>Request local inspection help for older homes, recurring breaker trips, pre-sale concerns, renovation planning, and visible electrical safety questions.</p>
+      </div>
+      <a class="text-link" href="service-safety-inspections.html">Explore service <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </article>
+        </div>
+      </section><section class="home-service-category reveal">
+        <div class="home-service-category-head">
+          <p class="eyebrow">Planned improvements</p>
+          <h3>Installations and lighting</h3>
+          <p>For homeowners adding fixtures, outlets, controls, lighting, or practical upgrades that need safe planning.</p>
+        </div>
+        <div class="home-service-category-cards">
+          <article class="card service-card reveal">
+    <img src="img/services/electrical-installation.webp" alt="Electrical Installation service scene" loading="lazy">
+    <div class="service-card-body">
+      <div class="service-card-top">
+        <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plug-zap" aria-hidden="true" class="lucide lucide-plug-zap"><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path><path d="m2 22 3-3"></path><path d="M7.5 13.5 10 11"></path><path d="M10.5 16.5 13 14"></path><path d="m18 3-4 4h6l-4 4"></path></svg></span>
+        <span class="eyebrow">Residential setup</span>
+      </div>
+      <div>
+        <h3>Electrical Installation</h3>
+        <p>Connect with local providers for outlets, switches, ceiling fans, dedicated circuits, appliance hookups, and carefully planned home electrical additions.</p>
+      </div>
+      <a class="text-link" href="service-electrical-installation.html">Explore service <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </article><article class="card service-card reveal">
+    <img src="img/services/lighting-installation.webp" alt="Lighting Installation service scene" loading="lazy">
+    <div class="service-card-body">
+      <div class="service-card-top">
+        <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="lightbulb" aria-hidden="true" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></span>
+        <span class="eyebrow">Interior and exterior</span>
+      </div>
+      <div>
+        <h3>Lighting Installation</h3>
+        <p>Find local providers for recessed lights, fixtures, exterior security lighting, dimmers, under-cabinet lighting, and lighting layout improvements.</p>
+      </div>
+      <a class="text-link" href="service-lighting-installation.html">Explore service <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </article>
+        </div>
+      </section><section class="home-service-category reveal">
+        <div class="home-service-category-head">
+          <p class="eyebrow">System planning</p>
+          <h3>Power capacity and wiring</h3>
+          <p>For panel, circuit, remodel, and wiring requests where capacity, access, and code conversations matter.</p>
+        </div>
+        <div class="home-service-category-cards">
+          <article class="card service-card reveal">
+    <img src="img/services/panel-upgrades.webp" alt="Panel Upgrades service scene" loading="lazy">
+    <div class="service-card-body">
+      <div class="service-card-top">
+        <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="panel-top" aria-hidden="true" class="lucide lucide-panel-top"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path></svg></span>
+        <span class="eyebrow">Capacity and breakers</span>
+      </div>
+      <div>
+        <h3>Panel Upgrades</h3>
+        <p>Find local help for breaker panel evaluations, replacement planning, subpanel requests, capacity concerns, and safer circuit organization.</p>
+      </div>
+      <a class="text-link" href="service-panel-upgrades.html">Explore service <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </article><article class="card service-card reveal">
+    <img src="img/services/wiring-rewiring.webp" alt="Wiring and Rewiring service scene" loading="lazy">
+    <div class="service-card-body">
+      <div class="service-card-top">
+        <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cable" aria-hidden="true" class="lucide lucide-cable"><path d="M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z"></path><path d="M17 21v-2"></path><path d="M19 14V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V10"></path><path d="M21 21v-2"></path><path d="M3 5V3"></path><path d="M4 10a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2z"></path><path d="M7 5V3"></path></svg></span>
+        <span class="eyebrow">Renovation support</span>
+      </div>
+      <div>
+        <h3>Wiring and Rewiring</h3>
+        <p>Connect with providers for remodel wiring, old wiring concerns, room additions, grounded circuit needs, and safer electrical layouts.</p>
+      </div>
+      <a class="text-link" href="service-wiring-rewiring.html">Explore service <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </article>
+        </div>
+      </section></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Aggregator clarity</p>
+          <h2>What VoltLink does, and what remains between you and the provider.</h2>
+          <p>A matching site should be clear about its role. We help organize and route requests, while independent local providers handle estimates, licensing, scheduling, permits, and the actual electrical work.</p>
+        </div>
+        <div class="aggregator-split">
+          <div class="card aggregator-card reveal">
+            <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="radio-tower" aria-hidden="true" class="lucide lucide-radio-tower"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"></path><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"></path><circle cx="12" cy="9" r="2"></circle><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"></path><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"></path><path d="M9.5 18h5"></path><path d="m8 22 4-11 4 11"></path></svg></span>
+            <h3>We help route the request</h3>
+            <ul class="feature-list">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg><span>Collect the service category, urgency, property area, and project notes.</span></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg><span>Help connect homeowners with available independent local providers.</span></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg><span>Keep safety reminders visible before the homeowner chooses who to hire.</span></li>
+            </ul>
+          </div>
+          <div class="card aggregator-card warning reveal">
+            <span class="icon-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="triangle-alert" aria-hidden="true" class="lucide lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></span>
+            <h3>We do not perform the work</h3>
+            <ul class="feature-list">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="alert-circle" aria-hidden="true" class="lucide lucide-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><span>We are not an electrical contractor and do not supervise provider work.</span></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="alert-circle" aria-hidden="true" class="lucide lucide-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><span>We do not guarantee response time, pricing, workmanship, permits, or outcomes.</span></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="alert-circle" aria-hidden="true" class="lucide lucide-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><span>The homeowner must verify license and insurance before hiring.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-dark on-dark">
+      <div class="container grid-2">
+        <div class="media-frame process-media reveal">
+          <img src="img/home/process-call.webp" alt="Homeowner requesting service matching by phone" loading="lazy">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow on-dark">How it works</p>
+          <h2>Share the problem once. Get connected faster.</h2>
+          <p>The matching flow is designed for clarity: what happened, where it happened, how urgent it is, and what type of provider should review it.</p>
+          <div class="grid-2 steps">
+            <div class="card step-card">
+              <h3>Describe the issue</h3>
+              <p>Tell us about the room, device, panel, breaker, fixture, or symptom.</p>
+            </div>
+            <div class="card step-card">
+              <h3>Route the request</h3>
+              <p>The request is organized by service category and availability needs.</p>
+            </div>
+            <div class="card step-card">
+              <h3>Speak with providers</h3>
+              <p>Independent local providers can explain next steps and potential scope.</p>
+            </div>
+            <div class="card step-card">
+              <h3>Verify and hire</h3>
+              <p>Homeowners verify license, insurance, price, and fit before work begins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Request triage</p>
+          <h2>Different electrical requests need different routing.</h2>
+          <p>The intake flow helps separate immediate safety concerns from scheduled repairs and planned home upgrades, so the provider conversation starts with the right context.</p>
+        </div>
+        <div class="triage-grid">
+          <article class="card triage-card urgent reveal">
+            <span>Priority</span>
+            <h3>Urgent safety symptoms</h3>
+            <p>Burning odor, buzzing devices, partial power loss, warm outlets, repeated breaker trips, or storm-related problems.</p>
+            <strong>Best next step: stop using the affected area and request urgent matching.</strong>
+          </article>
+          <article class="card triage-card reveal">
+            <span>Repair</span>
+            <h3>Troubleshooting and fixes</h3>
+            <p>Dead outlets, faulty switches, lighting failures, fixture problems, or isolated circuit concerns.</p>
+            <strong>Best next step: describe the room, device, and symptoms.</strong>
+          </article>
+          <article class="card triage-card reveal">
+            <span>Project</span>
+            <h3>Planned installations</h3>
+            <p>New outlets, panel planning, lighting upgrades, remodel wiring, appliance circuits, and inspection requests.</p>
+            <strong>Best next step: share photos, timeline, and project goals.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Network signals</p>
+          <h2>Built around speed, clarity, and homeowner control.</h2>
+        </div>
+        <div class="metric-row on-dark">
+          <div class="metric reveal"><strong><span data-count="6">0</span></strong><span>Core service categories</span></div>
+          <div class="metric reveal"><strong><span data-count="24">0</span>/7</strong><span>Request intake availability</span></div>
+          <div class="metric reveal"><strong><span data-count="100">0</span>%</strong><span>Independent provider verification responsibility</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-dark on-dark">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="eyebrow on-dark">Before hiring</p>
+          <h2>Use the provider conversation to verify the important details.</h2>
+          <p>Because providers are independent, the homeowner remains in control of the hiring decision. These checks should happen before any electrical work begins.</p>
+          <a class="btn btn-light magnetic" href="contact.html">Start a Request</a>
+        </div>
+        <div class="verification-board reveal">
+          <div class="verify-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="badge-check" aria-hidden="true" class="lucide lucide-badge-check"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            <div><strong>License</strong><span>Ask for the license required for the work and location.</span></div>
+          </div>
+          <div class="verify-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield" aria-hidden="true" class="lucide lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+            <div><strong>Insurance</strong><span>Confirm insurance before authorizing service.</span></div>
+          </div>
+          <div class="verify-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-text" aria-hidden="true" class="lucide lucide-file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+            <div><strong>Written scope</strong><span>Review estimate, labor, parts, fees, and exclusions.</span></div>
+          </div>
+          <div class="verify-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clipboard-check" aria-hidden="true" class="lucide lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg>
+            <div><strong>Permits</strong><span>Ask who handles permits or inspections if required.</span></div>
+          </div>
+          <div class="verify-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar-clock" aria-hidden="true" class="lucide lucide-calendar-clock"><path d="M16 14v2.2l1.6 1"></path><path d="M16 2v4"></path><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path><path d="M3 10h5"></path><path d="M8 2v4"></path><circle cx="16" cy="16" r="6"></circle></svg>
+            <div><strong>Timing</strong><span>Confirm arrival window, access needs, and completion plan.</span></div>
+          </div>
+          <div class="verify-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="receipt" aria-hidden="true" class="lucide lucide-receipt"><path d="M12 17V7"></path><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"></path><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path></svg>
+            <div><strong>Payment terms</strong><span>Understand deposit, final payment, warranty, and receipts.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="coverage-panel reveal">
+          <p class="eyebrow">Local availability</p>
+          <h2>Matching depends on the request details and provider coverage.</h2>
+          <p>Electrical service availability changes by area, time of day, provider schedule, and project type. The request form helps capture the signals local providers need before deciding whether they can respond.</p>
+          <ul class="feature-list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Property city and ZIP help narrow the provider area.</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg><span>Urgency helps distinguish priority repair from planned work.</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="image" aria-hidden="true" class="lucide lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg><span>Photos or clear notes can reduce back-and-forth before a call.</span></li>
+          </ul>
+        </div>
+        <div class="coverage-map-card reveal">
+          <div class="map-rings" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="coverage-pin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+            <strong>Local Provider Match</strong>
+            <small>Service category + urgency + location</small>
+          </div>
+          <div class="coverage-stats">
+            <div><strong>ZIP</strong><span>Routing signal</span></div>
+            <div><strong>Need</strong><span>Service category</span></div>
+            <div><strong>Time</strong><span>Availability window</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Homeowner perspective</p>
+          <h2>What people value about a matching-first flow.</h2>
+        </div>
+        <div class="swiper testimonial-swiper reveal swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <div class="swiper-wrapper" id="swiper-wrapper-59e72dc19590f325" aria-live="off">
+            <div class="swiper-slide testimonial swiper-slide-active" role="group" aria-label="1 / 3">
+              <div class="quote-stars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div>
+              <p>"The request form helped me explain the issue clearly before speaking with a provider."</p>
+              <strong>Homeowner request: breaker issue</strong>
+            </div>
+            <div class="swiper-slide testimonial swiper-slide-next" role="group" aria-label="2 / 3">
+              <div class="quote-stars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div>
+              <p>"I needed a starting point for a lighting project and got connected without calling five places."</p>
+              <strong>Homeowner request: lighting installation</strong>
+            </div>
+            <div class="swiper-slide testimonial" role="group" aria-label="3 / 3">
+              <div class="quote-stars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div>
+              <p>"The reminder to verify license and insurance was useful before choosing who to hire."</p>
+              <strong>Homeowner request: safety inspection</strong>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Common questions</p>
+          <h2>Clear answers before you submit a request.</h2>
+        </div>
+        <div class="faq-grid">
+          <details class="faq-item reveal" open="">
+            <summary>Is VoltLink an electrical contractor?</summary>
+            <p>No. VoltLink is a free matching service. Independent providers perform inspections, estimates, repairs, installations, and any related electrical work.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Does using the site guarantee that a provider will be available?</summary>
+            <p>No. Availability depends on the homeowner's location, service type, urgency, provider schedules, and local coverage.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Who verifies licensing and insurance?</summary>
+            <p>The homeowner is responsible for verifying that the selected provider has the license and insurance required for the work being performed.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What should I do if there is immediate danger?</summary>
+            <p>If there is smoke, fire, active arcing, shock risk, or immediate danger, contact emergency services and the appropriate utility first.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div class="cta-band-inner">
+            <div>
+              <p class="eyebrow on-dark">Ready to start</p>
+              <h2>Need electrical help now or planning a project?</h2>
+              <p>Submit the request and we will help route it toward independent local providers based on the service type and details you share.</p>
+            </div>
+            <a class="btn btn-light magnetic" href="contact.html">Request a Match</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer="">
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div>
+          <a class="brand" href="index.html" aria-label="VoltLink Electrical Match home">
+    <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></span>
+    <span data-config="brandText">VoltLink</span>
+  </a>
+          <p data-config="footerText">A free matching service helping homeowners connect with independent local electrical service providers for repairs, installations, inspections, and urgent electrical concerns.</p>
+          <p data-config="footerCompanyLine">VoltLink Electrical Match - 4108 Maple Service Road, Suite 214, Denver, CO 80216 - Network ID VL-48219</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links"><li><a href="service-electrical-installation.html">Electrical Installation</a></li><li><a href="service-panel-upgrades.html">Panel Upgrades</a></li><li><a href="service-emergency-repairs.html">Emergency Electrical Repairs</a></li><li><a href="service-wiring-rewiring.html">Wiring and Rewiring</a></li><li><a href="service-lighting-installation.html">Lighting Installation</a></li><li><a href="service-safety-inspections.html">Electrical Safety Inspections</a></li></ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:support@voltlinkelectrical.com" data-config="email">support@voltlinkelectrical.com</a></li>
+            <li><a href="tel:8884107719" data-config="phone">(888) 410-7719</a></li>
+            <li><a href="https://voltlinkelectrical.com" data-config="website">voltlinkelectrical.com</a></li>
+            <li><span data-config="address">4108 Maple Service Road, Suite 214, Denver, CO 80216</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-disclaimer" data-config="disclaimer">Disclaimer: This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</div>
+      <div class="container footer-bottom">
+        <span data-config="copyright">Copyright 2026 VoltLink Electrical Match. All rights reserved.</span>
+        <span><a href="privacy.html">Privacy Policy</a> / <a href="terms.html">Terms &amp; Conditions</a> / <a href="cookie.html">Cookie Policy</a></span>
+      </div>
+    </footer></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+
+
+<a class="floating-cta" href="tel:8884107719" data-floating-cta="" aria-label="Call VoltLink Electrical Match at (888) 410-7719">
+    <span class="floating-cta-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone-call" aria-hidden="true" class="lucide lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9"></path><path d="M13 6a5 5 0 0 1 5 5"></path><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></span>
+    <span>Call</span>
+  </a></body></html>

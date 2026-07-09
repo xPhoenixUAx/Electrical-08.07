@@ -1,0 +1,241 @@
+.about-hero {
+  min-height: 480px;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 0.8fr);
+  gap: clamp(30px, 5vw, 72px);
+  align-items: center;
+}
+
+.about-story-copy {
+  max-width: 780px;
+}
+
+.about-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.about-stat-strip div {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: var(--color-soft);
+}
+
+.about-stat-strip strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-blue);
+  font-size: 1.35rem;
+}
+
+.about-stat-strip span {
+  color: var(--color-muted);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.about-image-stack {
+  position: relative;
+}
+
+.about-image-main {
+  width: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.about-floating-note {
+  position: absolute;
+  inset: auto 24px 24px auto;
+  display: grid;
+  gap: 6px;
+  width: min(72%, 300px);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  background: rgba(6, 24, 51, 0.82);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-dark);
+}
+
+.about-floating-note svg {
+  width: 26px;
+  height: 26px;
+  color: var(--color-cyan);
+}
+
+.about-floating-note span {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.45;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.role-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.role-card.dont {
+  background: #fff8ec;
+}
+
+.role-card.dont .icon-pill {
+  background: linear-gradient(145deg, #f4b63f, #c27513);
+}
+
+.role-card.dont .feature-list svg {
+  color: #c27513;
+}
+
+.process-feature,
+.verification-feature {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.48fr) minmax(0, 0.52fr);
+  gap: clamp(28px, 5vw, 66px);
+  align-items: center;
+}
+
+.about-timeline {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.about-timeline div {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: var(--color-soft);
+}
+
+.about-timeline strong {
+  color: var(--color-ink);
+  font-size: 1.05rem;
+}
+
+.about-timeline p {
+  margin: 0;
+}
+
+.verification-feature {
+  grid-template-columns: minmax(0, 0.52fr) minmax(320px, 0.48fr);
+}
+
+.verification-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.verification-checks div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.verification-checks svg {
+  flex: 0 0 auto;
+  width: 21px;
+  height: 21px;
+  color: var(--color-cyan);
+}
+
+.values-grid .card {
+  padding: 24px;
+}
+
+@media (max-width: 980px) {
+  .about-story-grid,
+  .process-feature,
+  .verification-feature,
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-main {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 720px) {
+  .about-hero {
+    min-height: 300px;
+  }
+
+  .about-stat-strip,
+  .verification-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-grid,
+  .process-feature,
+  .verification-feature {
+    gap: 24px;
+  }
+
+  .about-image-main {
+    min-height: 260px;
+    border-radius: var(--radius-md);
+  }
+
+  .about-stat-strip {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .about-stat-strip div {
+    padding: 14px;
+  }
+
+  .role-card {
+    padding: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .about-floating-note {
+    position: relative;
+    inset: auto;
+    width: auto;
+    margin: -30px 14px 0;
+    padding: 15px;
+  }
+
+  .about-timeline {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .about-timeline div {
+    padding: 14px;
+  }
+
+  .verification-checks {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .verification-checks div,
+  .values-grid .card {
+    padding: 15px;
+  }
+}
