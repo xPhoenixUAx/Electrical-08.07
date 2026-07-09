@@ -65,11 +65,11 @@
   position: relative;
   min-height: 156px;
   overflow: hidden;
-  border: 1px solid rgba(15, 95, 209, 0.12);
+  border: 1px solid rgba(244, 118, 33, 0.14);
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(240, 246, 255, 0.94)),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(247, 243, 237, 0.94)),
     var(--color-white);
-  box-shadow: 0 18px 48px rgba(11, 31, 61, 0.08);
+  box-shadow: 0 18px 48px rgba(20, 18, 15, 0.08);
 }
 
 .rich-included::after {
@@ -79,8 +79,9 @@
   bottom: -38px;
   width: 104px;
   height: 104px;
-  border-radius: 50%;
-  background: rgba(15, 95, 209, 0.08);
+  border-radius: 12px;
+  background: rgba(244, 118, 33, 0.08);
+  transform: rotate(12deg);
 }
 
 .rich-included strong {
@@ -97,24 +98,24 @@
   place-items: center;
   width: 58px;
   height: 58px;
-  border: 1px solid rgba(255, 255, 255, 0.64);
-  border-radius: 16px;
-  color: var(--color-white);
+  border: 1px solid rgba(17, 23, 34, 0.14);
+  border-radius: 12px;
+  color: #2f3b4d;
   background:
-    radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.58), transparent 26%),
-    linear-gradient(145deg, #63b3ff 0%, var(--color-blue) 48%, #082a5a 100%);
-  box-shadow:
-    0 18px 34px rgba(15, 95, 209, 0.26),
-    inset 0 1px 0 rgba(255, 255, 255, 0.42),
-    inset 0 -10px 18px rgba(0, 0, 0, 0.16);
+    linear-gradient(180deg, #ffffff, #eef2f6);
+  box-shadow: 0 16px 30px rgba(20, 18, 15, 0.08);
 }
 
 .service-icon-badge::before {
   content: "";
   position: absolute;
-  inset: 8px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  right: 9px;
+  bottom: 9px;
+  width: 12px;
+  height: 3px;
+  border-radius: 999px;
+  background: #8b98a8;
+  opacity: 0.75;
 }
 
 .service-icon-badge svg {
@@ -122,7 +123,7 @@
   z-index: 1;
   width: 26px;
   height: 26px;
-  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.22));
+  stroke-width: 2.2;
 }
 
 .service-icon-badge.small {
@@ -140,15 +141,14 @@
   flex: 0 0 auto;
   width: 34px;
   height: 34px;
-  border-radius: 11px;
-  box-shadow:
-    0 10px 24px rgba(15, 95, 209, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  border-radius: 9px;
+  box-shadow: 0 10px 20px rgba(7, 16, 31, 0.14);
 }
 
 .service-icon-badge.mini::before {
-  inset: 6px;
-  border-radius: 8px;
+  right: 6px;
+  bottom: 6px;
+  width: 8px;
 }
 
 .service-icon-badge.mini svg {
@@ -232,25 +232,29 @@
 }
 
 .process-list li {
+  position: relative;
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 14px;
-  align-items: center;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  min-height: 58px;
+  overflow: hidden;
   color: var(--color-muted);
   line-height: 1.52;
 }
 
 .process-number {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  color: var(--color-white);
-  background: var(--color-navy);
-  font-size: 0.84rem;
+  display: block;
+  width: auto;
+  height: auto;
+  margin-top: -5px;
+  color: rgba(17, 23, 34, 0.06);
+  font-size: clamp(2.85rem, 4.4vw, 4.1rem);
   font-weight: 900;
-  box-shadow: 0 14px 30px rgba(6, 24, 51, 0.18);
+  line-height: 0.9;
+  letter-spacing: 0;
+  -webkit-text-stroke: 1px rgba(17, 23, 34, 0.2);
+  text-stroke: 1px rgba(17, 23, 34, 0.2);
 }
 
 .service-image-stack {
@@ -290,9 +294,9 @@
   gap: 14px;
   min-height: 96px;
   padding: 18px;
-  border: 1px solid rgba(15, 95, 209, 0.1);
+  border: 1px solid rgba(244, 118, 33, 0.12);
   border-radius: var(--radius-md);
-  background: linear-gradient(145deg, #ffffff, #f5f8fd);
+  background: linear-gradient(145deg, #ffffff, #f7f3ed);
   font-weight: 800;
   line-height: 1.36;
 }
@@ -454,13 +458,13 @@
   }
 
   .process-list li {
-    grid-template-columns: 38px minmax(0, 1fr);
+    grid-template-columns: 62px minmax(0, 1fr);
     gap: 10px;
   }
 
   .process-number {
-    width: 38px;
-    height: 38px;
+    margin-top: -3px;
+    font-size: 2.55rem;
   }
 
   .service-info-card,

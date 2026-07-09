@@ -45,6 +45,21 @@ function applyConfigText() {
     }
   });
 
+  document.querySelectorAll("[data-config-href]").forEach((el) => {
+    const key = el.dataset.configHref;
+    if (key === "email") {
+      el.setAttribute("href", `mailto:${siteConfig.email || ""}`);
+    }
+
+    if (key === "phone") {
+      el.setAttribute("href", phoneHref(siteConfig.phone));
+    }
+
+    if (key === "website") {
+      el.setAttribute("href", siteConfig.website || "#");
+    }
+  });
+
   document.querySelectorAll("[data-modal-company]").forEach((el) => {
     el.textContent = siteConfig.companyName || "";
   });
