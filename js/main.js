@@ -5,6 +5,13 @@ function phoneHref(phone) {
 }
 
 function applyConfigText() {
+  const title = document.querySelector("title[data-config-title]");
+  if (title?.dataset.configTitle) {
+    title.textContent = title.dataset.configTitle
+      .replaceAll("{companyName}", siteConfig.companyName || "")
+      .replaceAll("{shortName}", siteConfig.shortName || siteConfig.companyName || "");
+  }
+
   const values = {
     brandText: siteConfig.shortName,
     email: siteConfig.email,
@@ -121,7 +128,8 @@ function initCookieBanner() {
     try {
       return window.localStorage.getItem(storageKey);
     } catch (error) {
-      return null;
+      const match = document.cookie.match(new RegExp(`(?:^|; )${storageKey}=([^;]+)`));
+      return match ? decodeURIComponent(match[1]) : null;
     }
   };
 
