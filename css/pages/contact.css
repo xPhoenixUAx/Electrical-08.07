@@ -2,6 +2,10 @@
   padding: 26px;
 }
 
+.contact-card > .btn {
+  margin-top: 22px;
+}
+
 .contact-methods {
   display: grid;
   gap: 12px;
@@ -148,6 +152,10 @@ body.modal-open {
 @media (max-width: 560px) {
   .contact-card {
     padding: 16px;
+  }
+
+  .contact-card > .btn {
+    margin-top: 18px;
   }
 
   .contact-methods {

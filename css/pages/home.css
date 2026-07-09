@@ -255,66 +255,33 @@
   overflow: hidden;
   border-radius: var(--radius-lg);
   color: var(--color-white);
-  background:
-    radial-gradient(circle at 50% 48%, rgba(99, 179, 255, 0.28), transparent 24%),
-    linear-gradient(145deg, #0a2348, #061833);
+  background: #061833;
   box-shadow: var(--shadow-card);
 }
 
-.map-rings {
+.coverage-map-card::before {
+  content: "";
   position: absolute;
   inset: 0;
-  display: grid;
-  place-items: center;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(4, 18, 38, 0.18), rgba(4, 18, 38, 0.68)),
+    radial-gradient(circle at 52% 46%, transparent 0 28%, rgba(4, 18, 38, 0.35) 70%);
+  pointer-events: none;
 }
 
-.map-rings span {
+.coverage-map-image {
   position: absolute;
-  width: 36%;
-  aspect-ratio: 1;
-  border: 1px solid rgba(99, 179, 255, 0.3);
-  border-radius: 50%;
-}
-
-.map-rings span:nth-child(2) {
-  width: 58%;
-  opacity: 0.7;
-}
-
-.map-rings span:nth-child(3) {
-  width: 82%;
-  opacity: 0.45;
-}
-
-.coverage-pin {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  display: grid;
-  justify-items: center;
-  gap: 6px;
-  width: min(72%, 270px);
-  padding: 22px;
-  border-radius: var(--radius-md);
-  text-align: center;
-  background: rgba(255, 255, 255, 0.12);
-  transform: translate(-50%, -50%);
-  backdrop-filter: blur(14px);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.13);
-}
-
-.coverage-pin svg {
-  width: 32px;
-  height: 32px;
-  color: var(--color-cyan);
-}
-
-.coverage-pin small {
-  color: rgba(255, 255, 255, 0.7);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .coverage-stats {
   position: absolute;
   inset: auto 20px 20px;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
@@ -476,11 +443,6 @@
   .coverage-stats {
     grid-template-columns: 1fr;
     inset: auto 14px 14px;
-  }
-
-  .coverage-pin {
-    width: min(78%, 240px);
-    padding: 16px;
   }
 
   .faq-item {

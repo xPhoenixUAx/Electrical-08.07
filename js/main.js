@@ -109,6 +109,49 @@ function initFloatingCta() {
   window.addEventListener("scroll", sync, { passive: true });
 }
 
+function initCookieBanner() {
+  const banner = document.querySelector("[data-cookie-banner]");
+  if (!banner) return;
+
+  const storageKey = "voltlinkCookieConsent";
+  const acceptBtn = banner.querySelector("[data-cookie-accept]");
+  const declineBtn = banner.querySelector("[data-cookie-decline]");
+
+  const getStoredChoice = () => {
+    try {
+      return window.localStorage.getItem(storageKey);
+    } catch (error) {
+      return null;
+    }
+  };
+
+  const setStoredChoice = (choice) => {
+    try {
+      window.localStorage.setItem(storageKey, choice);
+    } catch (error) {
+      document.cookie = `${storageKey}=${choice}; path=/; max-age=15552000; SameSite=Lax`;
+    }
+  };
+
+  const close = (choice) => {
+    setStoredChoice(choice);
+    banner.classList.remove("is-visible");
+    window.setTimeout(() => {
+      banner.hidden = true;
+    }, 240);
+  };
+
+  if (!getStoredChoice()) {
+    banner.hidden = false;
+    window.requestAnimationFrame(() => {
+      banner.classList.add("is-visible");
+    });
+  }
+
+  acceptBtn?.addEventListener("click", () => close("accepted"));
+  declineBtn?.addEventListener("click", () => close("declined"));
+}
+
 function initAccordions() {
   const accordions = document.querySelectorAll("details.faq-item");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -368,6 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initLucide();
   initHeaderBehavior();
   initFloatingCta();
+  initCookieBanner();
   initAccordions();
   initForms();
   initCounters();
